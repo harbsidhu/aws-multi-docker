@@ -13,9 +13,11 @@ after_success:
   - docker build -t harbsidhu/aws-multi-nginx ./nginx
   - docker build -t harbsidhu/aws-multi-server ./server
   - docker build -t harbsidhu/aws-multi-worker ./worker
-  # Log in to the docker CLI
+  
+# Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  # Take those images and push them to docker hub
+
+# Take those images and push them to docker hub
   - docker push harbsidhu/aws-multi-client
   - docker push harbsidhu/aws-multi-nginx
   - docker push harbsidhu/aws-multi-server
