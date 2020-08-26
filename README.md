@@ -4,5 +4,6 @@ Reference https://github.com/stephengrider
 
 Fork of stephengrider/multi-docker
 
-Amended
--- Image names
+-- Amened Image names
+  -- .tavis.yml
+  -- Dockerrun.aws.json
